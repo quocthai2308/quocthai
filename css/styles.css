@@ -1,0 +1,354 @@
+/* Header */
+label:hover {
+    color: #ff4040;
+}
+
+.dropdown-list {
+    border: none;
+    background: #f7f7f7;
+    font-size: .9em;
+}
+
+.dropdown-list:hover {
+    color: #ff4040;
+}
+
+.option:hover {
+    color: #ff4040;
+}
+
+.top-header {
+    background: #f7f7f7;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navigation */
+.nav-center {
+    margin: 0 auto;
+}
+
+.nav-home {
+    color: #ff4040;
+}
+
+.navbar-brand {
+    width: 150px;
+}
+
+.navbar-nav {
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.nav-item :hover {
+    color: #ff4040;
+}
+
+.btn-area {
+    text-align: right;
+}
+
+.btn-area :hover {
+    color: #ff4040;
+}
+
+.my-account {
+    display: inline-block;
+    text-align: right;
+}
+
+/* Banner1 */
+.kind-pro {
+    margin: 0 auto;
+}
+
+.product {
+    width: 100%;
+}
+
+.kind-pro-item {
+    text-align: center;
+}
+
+.item {
+    border-radius: 50%;
+}
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+}
+
+.item:hover {
+    border: solid 3px #ff4040;
+    border-radius: 50%;
+    transform: scale(.9);
+}
+
+.item-name:hover {
+    color: #ff4040;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Content */
+.latest-pro {
+    margin-top: -70px;
+    padding-bottom: 10px;
+}
+/* Hover img product */
+.product-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 50%;
+    right: 0;
+    transition: .3s;
+}
+
+.product-link:hover .btn-hover {
+    left: 82%;
+}
+
+.fa-eye:hover,.cart:hover,.fa-heart:hover,.fa-shuffle:hover {
+    color: #fff;
+    background: #000;
+}
+.fa-eye {
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.cart {
+    margin-top: 15px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.fa-heart {
+    margin-top: 15px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.fa-shuffle {
+    margin-top: 15px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.name-pro {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.1em;
+}
+
+.name-pro:hover {
+    color: #ff4040;
+}
+
+.center {
+    text-align: center;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+/* Banner2 */
+.text-red {
+    color: #ff4040;
+    font-weight: bold;
+}
+
+h4,
+h5 {
+    text-align: center;
+}
+
+.banner2-text {
+    transform: translate(10%, -170%);
+}
+
+/* Hover banner2 */
+.banner2 {
+    display: inline-block;
+    overflow: hidden;
+    height: 70%;
+}
+
+.img-banner2 {
+    display: block;
+    transition: ease-in-out .4s;
+}
+
+.banner2:hover .img-banner2 {
+    transform: scale(1.04);
+}
+
+.btn-shopnow {
+    width: 140px;
+    height: 43px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+}
+
+.btn-shopnow:hover {
+    background: #ff4040;
+    color: #fff;
+}
+
+/* Brand */
+.img-brand {
+    text-align: center;
+}
+
+/* Blog */
+.btn-readmore {
+    width: 145px;
+    height: 43px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.btn-readmore:hover {
+    background: #ff4040;
+}
+
+/* Hover img blog */
+.blog-parent {
+    position: relative;
+    overflow: hidden;
+}
+.img-blog {
+    width: 100%;
+}
+.btn-blog {
+    position: absolute;
+    top: 70%;
+    right: 100%;
+    left: -10%;
+    transition: .5s;
+}
+.blog-parent:hover .btn-blog {
+    left: 5%;
+}
+
+.search:hover, .fa-link:hover {
+    color: #fff;
+    background: #000;
+}
+.search {
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.fa-link {
+    margin-top: 13px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.blog-padding {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.latest-blog {
+    background: #f7f7f7;
+}
+
+.blog-text {
+    padding: 0 10px;
+    color: #777777;
+    text-align: center;
+}
+
+/* Service */
+.service {
+    font-size: .95em;
+}
+
+/* Contact */
+.newsletter {
+    color: #777777;
+}
+
+.text-gray {
+    color: #777777;
+}
+
+.text-gray:hover {
+    color: #ff4040;
+}
+
+.email {
+    width: 280px;
+    height: 45px;
+    border: none;
+    background: #f7f7f7;
+}
+
+.btn-sub {
+    width: 100px;
+    height: 45px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn-sub:hover {
+    background: #ff4040;
+    color: #fff;
+}
+
+/* Footer */
+.img-center {
+    text-align: center;
+    padding: 30px 0;
+}

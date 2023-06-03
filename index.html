@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project FE1</title>
+    <link rel="stylesheet" href="public/css/all.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="top-header">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <form action="#">
+                        <label for="currency">Currency:</label>
+                        <select name="currency" id="currency" class="dropdown-list">
+                            <option value="0" class="option">USD</option>
+                            <option value="1" class="option">€ Euro</option>
+                            <option value="2" class="option">£ Pound Sterling</option>
+                            <option value="3" class="option">$ US Dollar</option>
+                        </select>
+                        <label for="language">Language:</label>
+                        <select name="language" id="language" class="dropdown-list">
+                            <option disabled selected>En-Gb</option>
+                            <option value="0">USD</option>
+                            <option value="1">€ Euro</option>
+                        </select>
+                    </form>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">FREE SHIPPING FOR ORDER OVER $150!</div>
+                </div>
+                <div class="col-md-4 my-account">
+                    <label for="account"><i class="fa-regular fa-user"></i></label>
+                    <select name="account" id="account" class="dropdown-list">
+                        <option disabled selected>My Account</option>
+                        <option value="0">Register</option>
+                        <option value="1">Login</option>
+                        <option value="2">Wishlist (0)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-md-3">
+                <a href="#"><img src="public/images/logo.png" alt="brand" class="navbar-brand mt-3"></a>
+            </div>
+            <div class="col-md-6 nav-center">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <div class="nav-home">HOME</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MEN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WALLET</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MORE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOGS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-2 btn-area mt-3">
+                        <a href="#" class="text-dark ms-auto"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    </div>
+                    <div class="col-md-2 btn-area mt-3">
+                        <a href="#" class="text-dark"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner1 -->
+    <div class="banner1 row gx-0">
+        <div class="col-4">
+            <a href="#">
+                <img src="public/images/mainbanner1-640x750.jpg" alt="banner1" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="#">
+                <img src="public/images/mainbanner2-640x750.jpg" alt="banner2" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="#">
+                <img src="public/images/mainbanner3-640x750.jpg" alt="banner3" class="img-fluid">
+            </a>
+        </div>
+    </div>
+    <!-- Kind of product -->
+
+    <div class="kind-pro row py-5">
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/8-165x165.jpg" alt="women" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Women</div>
+            </a>
+        </div>
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/5-165x165.jpg" alt="men" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Men</div>
+            </a>
+        </div>
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/4-165x165.jpg" alt="kids" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Kids</div>
+            </a>
+        </div>
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/1-165x165.jpg" alt="bags" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Bags</div>
+            </a>
+        </div>
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/2-165x165.jpg" alt="goggles" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Goggles</div>
+            </a>
+        </div>
+        <div class="col-2 kind-pro-item">
+            <a href="#">
+                <img src="public/images/3-165x165.jpg" alt="jewelry" class="item img-fluid">
+                <br>
+                <div class="item-name pt-4">Jewelry</div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Content -->
+    <h4 class="pb-3">SPECIAL PRODUCTS</h4>
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/12-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Analog Watch</a>
+                    <span class="price-new">$98.00</span>
+                    <span class="price-old">$122.00</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/10-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Blowtorch Goggle</a>
+                    <span class="price-new">$116.00</span>
+                    <span class="price-old">$122.00</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/15-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Digital Watch</a>
+                    <span class="price-new">$290.00</span>
+                    <span class="price-old">$377.99</span>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="pb-3">FEATURED PRODUCTS</h4>
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/6-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Barrel Bag</a>
+                    <span class="price-new">$241.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/7-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Black Goggle</a>
+                    <span class="price-new">$241.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/9-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <a href="#" class="name-pro">Shirt</a>
+                    <span class="price-new">$1,800.00</span>
+                    <span class="price-old">$2,000.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner2 -->
+    <div class="row px-5">
+        <div class="col-md-4">
+            <a href="#" class="banner2">
+                <img src="public/images/banner1.jpg" alt="banner2" class="img-fluid img-banner2">
+                <div class="banner2-text">
+                    <div class="text-red">MEN'S COLLECTION</div>
+                    <h3 class="text-dark">SAVE UP TO 20%</h3>
+                    <div class="btn-shopnow">SHOPNOW</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="banner2">
+                <img src="public/images/banner2.jpg" alt="banner2" class="img-fluid img-banner2">
+                <div class="banner2-text">
+                    <div class="text-red">WOMEN'S COLLECTION</div>
+                    <h3 class="text-dark">SAVE UP TO 30%</h3>
+                    <div class="btn-shopnow">SHOPNOW</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="banner2">
+                <img src="public/images/banner3.jpg" alt="banner2" class="img-fluid img-banner2">
+                <div class="banner2-text">
+                    <div class="text-red">KID'S COLLECTION</div>
+                    <h3 class="text-dark">SAVE UP TO 40%</h3>
+                    <div class="btn-shopnow">SHOPNOW</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="container">
+        <h4 class="latest-pro">LATEST PRODUCTS</h4>
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/6-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Barrel Bag</a>
+                    <span class="price-new">$241.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/7-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Black Goggle</a>
+                    <span class="price-new">$241.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/11-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Slipper</a>
+                    <span class="price-new">$122.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 class="pb-3">BESTSELLERS</h4>
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/13-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Ruched Dress</a>
+                    <span class="price-new">$100.00</span>
+                    <span class="price-old">$122.00</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/2-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <a href="#" class="name-pro">Zip Wallet</a>
+                    <span class="price-new">$1,082.00</span>
+                    <span class="price-old">$1,202.99</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="product-link">
+                        <img src="public/images/6-360x480.jpg" alt="product" class="img-fluid img-pro">
+                        <div class="btn-hover">
+                            <i class="fa-regular fa-eye"></i><br>
+                            <i class="cart fa-solid fa-bag-shopping"></i><br>
+                            <i class="fa-regular fa-heart"></i><br>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="center">
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffb503;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="#" class="name-pro">Barrel Bag</a>
+                    <span class="price-new">$241.99</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands -->
+        <h4>OUR BRANDS</h4>
+        <div class="brands container my-5">
+            <div class="row">
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/1-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/2-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/3-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/4-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/5-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <div class="img-brand"><img src="public/images/6-76x40.png" alt="our brand"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="latest-blog">
+        <h4 class="blog-padding">LATEST BLOG</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-parent">
+                        <img src="public/images/blog1-750x500.jpg" alt="#" class="img-fluid img-blog">
+                        <div class="btn-blog">
+                            <i class="search fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                    <h5>Consectetur Adipiscing</h5>
+                    <p class="blog-text">
+                        Lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500...
+                    </p>
+                    <a href="#">
+                        <div class="btn-readmore">READ MORE</div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-parent">
+                        <img src="public/images/blog3-750x500.jpg" alt="#" class="img-fluid img-blog">
+                        <div class="btn-blog">
+                            <i class="search fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                    <h5>Lorem Ipsum Dolo</h5>
+                    <p class="blog-text">
+                        Lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500...
+                    </p>
+                    <a href="#">
+                        <div class="btn-readmore">READ MORE</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <div class="service bg-dark text-white">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <br>
+                    <b>Free Worldwide Shipping :</b>
+                    On All Order Above $99
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-headset"></i>
+                    <br>
+                    <b>Best Online Support :</b>
+                    Call Us 24/7 At 123-456-789
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-wallet"></i>
+                    <br>
+                    <b>Cash On Delivery :</b>
+                    100% Money Back Guarantee
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="pt-5">CONTACT INFO</h5>
+                    Address:
+                    2548 Broaddus Maple Court Avenue, Madisonville KY 4783, USA
+                    <br>
+                    Phone:
+                    0123-456-789, 123-456-7890
+                    <br>
+                    Email:<a href="#" class="text-gray"> demo@Yourstore.com</a>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="pt-5">SUBSCRIBE NEWSLETTER</h5>
+                    <br>
+                    <div class="newsletter">Stay up to date with new collections and exclusive offers.</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="email" name="email" id="email" placeholder="   Enter e-mail here..." class="email">
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="btn-sub ms-auto">SUBCRIBE</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="pt-5">INFORMATION</h5>
+                            <a href="#" class="text-gray">About Us</a><br>
+                            <a href="#" class="text-gray">Delivery Information</a><br>
+                            <a href="#" class="text-gray">Privacy Policy</a><br>
+                            <a href="#" class="text-gray">Terms & Conditions</a><br>
+                            <a href="#" class="text-gray">Contact Us</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="pt-5">MY ACCOUNT</h5>
+                            <a href="#" class="text-gray">My Account</a><br>
+                            <a href="#" class="text-gray">Order History</a><br>
+                            <a href="#" class="text-gray">Wish List</a><br>
+                            <a href="#" class="text-gray">Newsletter</a><br>
+                            <a href="#" class="text-gray">Returns</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><i class="fa-brands fa-facebook"
+                            style="font-size: 2.2em; color: #3b5998; padding: 30px 5px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"
+                            style="font-size: 2.2em; color: #00acee; padding: 30px 5px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube"
+                            style="font-size: 2.2em; color: #c4302b; padding: 30px 5px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus"
+                            style="font-size: 2.2em; color: #bd3236; padding: 30px 5px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"
+                            style="font-size: 2.2em; color: #c8232c; padding: 30px 5px;"></i></a>
+                </div>
+                <div class="col-md-4">
+                    Powered By OpenCart Your Store © 2023
+                </div>
+                <div class="col-md-4 ms-auto">
+                    <div class="img-center"><img src="public/images/payment.png" alt="payment" class="ms-auto"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/js/bootstrap.min.js"></script>
+</body>
+
+</html>
